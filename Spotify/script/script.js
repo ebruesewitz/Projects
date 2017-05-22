@@ -101,6 +101,15 @@ var artistTopTracks = function(artistid){
       for(var i = 0; i < results.length; i++){
         var trackname = document.createElement("li");
         trackname.innerHTML = results[i].name;
+        //add audio preview if available
+        if(results[i].preview_url){
+          var preview = document.createElement("AUDIO");
+          preview.setAttribute("src", results[i].preview_url);
+          trackname.appendChild(preview);
+          trackname.onclick = function(){playPreview(this.childNodes[1])};
+          trackname.style.color = "white";
+          trackname.style.cursor = "pointer";
+        }
         tracklist.appendChild(trackname);
       }
       //add top tracks list to the DOM
@@ -172,4 +181,17 @@ function clearPreviousSearch(){
   if(selectedartistimage){
     selectedartistimage.parentNode.removeChild(selectedartistimage);
   }
+}
+
+function playPreview(song){
+  if(song.paused){
+    song.play();
+    song.parentNode.style.fontWeight = "bold";
+  }else{
+    song.pause();
+    song.parentNode.style.fontWeight = "normal";
+  }
+  song.addEventListener("ended", function(){
+    song.parentNode.style.fontWeight = "normal";
+  });
 }

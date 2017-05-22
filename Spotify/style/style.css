@@ -55,6 +55,8 @@ ol li{
   list-style: decimal;
   text-align: left;
   border: none;
+  color: #aaa;
+  cursor: default;
 }
 
 img{
