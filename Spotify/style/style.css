@@ -68,3 +68,16 @@ img{
   margin-top: 50px;
   text-align: center;
 }
+
+@media only screen and (max-width: 500px ){
+  li{
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  ul{
+    padding: 0px;
+  }
+  img{
+    width: inherit;
+  }
+}
