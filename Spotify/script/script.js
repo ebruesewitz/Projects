@@ -107,7 +107,7 @@ var artistTopTracks = function(artistid){
           preview.setAttribute("src", results[i].preview_url);
           trackname.appendChild(preview);
           trackname.onclick = function(){playPreview(this.childNodes[1])};
-          trackname.style.color = "white";
+          trackname.style.color = "#1ED760";
           trackname.style.cursor = "pointer";
         }
         tracklist.appendChild(trackname);
