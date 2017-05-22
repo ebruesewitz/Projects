@@ -7,4 +7,6 @@ Made this in an afternoon to sort, store and view all of my recipes. Inspired by
 Visit the site [ebruesewitz.github.io/Projects/](https://ebruesewitz.github.io/Projects/) to view the (VERY SIMPLE) finished product.
 
 ## [Spotify Web App](Spotify)
-This will eventually be a simple web app written in HTML, CSS, and JS playing with Spotify's API.
+Simple music discovery app using HTML, CSS, and JS to play with Spotify's API. 
+Allows a user to search for an artist and view their top 10 songs and any related artists.
+If a preview is available for the top songs, the user can click on them to hear a 30 second preview.
