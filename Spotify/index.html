@@ -1,7 +1,25 @@
 <!DOCTYPE html>
 <head>
-
+  <meta name="viewport" content="width=device-width initial-scale=1">
+  <link rel="stylesheet" href="style/style.css">
+  <title>Spotify App</title>
 </head>
 <body>
-  
+  <h1>Welcome to my music app!</h1>
+  <p>Search for and click on an artist and see their top 5 songs on Spotify.</p>
+  <div id="searchform">
+    <form id="spotifysearch" action="index.html" method="get">
+      <input id="searchbar" type="text" name="artist" value="" placeholder="Enter Artist Name Here">
+      <input id="button" type="submit" name="button" value="Submit">
+    </form>
+  </div>
+  <p id="searchResults"></p>
+  <div id="selectedartist">
+    <h2 id="selectedartistname"></h2>
+  </div>
+  <h3 id="tracksheading"></h3>
+  <div id="trackslist"></div>
+  <h3 id="relatedartistsheading"></h3>
+  <div id="results"></div>
+  <script src="script/script.js"></script>
 </body>
